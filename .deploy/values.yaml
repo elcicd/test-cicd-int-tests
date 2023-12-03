@@ -1,0 +1,7 @@
+elCicdTemplates:
+- templateName: job
+  command: ["/bin/bash"]
+  args:
+  - -c
+  - cd /opt/tests;
+  - mv test
