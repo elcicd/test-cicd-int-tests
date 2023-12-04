@@ -43,7 +43,7 @@ public class StepDefinitions {
             stationDemoHost = "localhost:8080";
         }
         
-        
+        System.out.println("stationDemoHost: " + stationDemoHost);
         path = (env != null) ? path + "-" + env : path;
         
         String httpUrl = "http://" + stationDemoHost + path + "/stations";
