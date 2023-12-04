@@ -47,6 +47,7 @@ public class StepDefinitions {
         path = (env != null) ? path + "-" + env : path;
         
         String httpUrl = "http://" + stationDemoHost + path + "/stations";
+        System.out.println(httpUrl);
         URL url = new URL(httpUrl);
 
         connection = (HttpURLConnection) url.openConnection();
