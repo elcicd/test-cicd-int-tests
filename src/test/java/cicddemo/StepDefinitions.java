@@ -33,7 +33,7 @@ public class StepDefinitions {
     @Given("the stationdemo app returns http code 200")
     public void the_stationdemo_app_returns_http_code_200() throws IOException, MalformedURLException {
         String stationDemoHost = "stationdemo:8080";
-        String env = System.getenv("SDLC_ENV");
+        String env = System.getProperty("SDLC_ENV");
         
         String path = "/stationdemo";
         if (env != null && !env.trim().isEmpty()) {
