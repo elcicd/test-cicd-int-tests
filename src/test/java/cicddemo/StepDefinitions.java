@@ -43,8 +43,6 @@ public class StepDefinitions {
             stationDemoHost = "localhost:8080";
         }
         
-        System.out.println("stationDemoHost: " + stationDemoHost);
-        
         String httpUrl = "http://" + stationDemoHost + path + "/stations";
         System.out.println(httpUrl);
         URL url = new URL(httpUrl);
