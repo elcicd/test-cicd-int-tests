@@ -36,7 +36,7 @@ public class StepDefinitions {
         String env = System.getenv("SDLC_ENV");
         
         String path = "/stationdemo";
-        if (env) {
+        if (env != null && !env.trim().isEmpty()) {
             path = path + "-" + env;
         }
         else {
